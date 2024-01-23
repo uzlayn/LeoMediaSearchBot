@@ -59,6 +59,7 @@ Media Search Bot 🇱🇰
 Here you can find any media file by searching its name 😊
 
 Bot : {username} 🤖 🇱🇰
+Support Group : @
 Updates Channel: @uzlaynuz 🇱🇰
 Developper : @Mdddyou 🇱🇰
 """
