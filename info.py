@@ -5,17 +5,17 @@ from os import environ
 id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
-SESSION = environ.get('SESSION', '')
-USER_SESSION = environ.get('USER_SESSION', 'User_Bot')
-APP_ID = int(environ['APP_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+SESSION = environ.get('SESSION', 'BQC6kfsAVd4ZkiWtMz_lW9BZNEYD_jfxtBTPSsnrZcywz6TZFr4WhbSLpkeULtwhR4jYwNoQ_HazMpPD3TNM-AZOX9KeexKPQfZMtd_oL-GPOx8TW0E3prFAYgNm6bXoxTgsQufE0vK7ASFdzDqhf9jF8asnR97m339DzcOlQwXBUqc-BpLWHYhNuipD32jTv5eTfD3ie6zvG7oqQmkLsvP5oAspNbrwXn9oFvzNrrJtZyCpZvaNDFUPWHifpbCkXiLbqxnoOusN7RInRfGnAbxM9e8W7qRvtA7dpJqTBLHYSlkxMGp36r0qG1e6aDGxLz0dsTQbF5AuCdy9KS7qhWAqS9I8nQAAAAFa5ESRAA')
+USER_SESSION = environ.get('BQC6kfsAVd4ZkiWtMz_lW9BZNEYD_jfxtBTPSsnrZcywz6TZFr4WhbSLpkeULtwhR4jYwNoQ_HazMpPD3TNM-AZOX9KeexKPQfZMtd_oL-GPOx8TW0E3prFAYgNm6bXoxTgsQufE0vK7ASFdzDqhf9jF8asnR97m339DzcOlQwXBUqc-BpLWHYhNuipD32jTv5eTfD3ie6zvG7oqQmkLsvP5oAspNbrwXn9oFvzNrrJtZyCpZvaNDFUPWHifpbCkXiLbqxnoOusN7RInRfGnAbxM9e8W7qRvtA7dpJqTBLHYSlkxMGp36r0qG1e6aDGxLz0dsTQbF5AuCdy9KS7qhWAqS9I8nQAAAAFa5ESRAA', 'Uzlaynbot')
+APP_ID = int(environ['25336929'])
+API_HASH = environ['308f4c34a6c3b90a74546d7e7e3087c2']
+BOT_TOKEN = environ['6705541825:AAGVNZE9qUtTVyfMe0_m4aL06L1EGHjLli8']
 USERBOT_STRING_SESSION = environ.get('USERBOT_STRING_SESSION')
-BOT_OWNER = int(os.environ.get("BOT_OWNER", 1069002447))
-BOT_USERNAME = os.environ.get("BOT_USERNAME")
+BOT_OWNER = int(os.environ.get("5819876497")
+BOT_USERNAME = os.environ.get("Uzlaynbot")
 
 # Bot settings
-MAX_RESULTS = int(environ.get('MAX_RESULTS', 10))
+MAX_RESULTS = int(environ.get('MAX_RESULTS', 15))
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 
@@ -29,43 +29,42 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", -100))
 
 # MongoDB information
-DATABASE_URI = environ['DATABASE_URI']
-DATABASE_NAME = environ['DATABASE_NAME']
+DATABASE_URI = environ['mongodb+srv://vaqtm:vaqtm@cluster0.a3burak.mongodb.net/?retryWrites=true&w=majority']
+DATABASE_NAME = environ['inline']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 #for broadcast and force sub
-BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", ""))
-UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
+BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", "flase"))
+UPDATES_CHANNEL = os.environ.get("-1002089478560")
 
 #ban/unban
 BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 
 #for broadcast and user stts db
-MONGODB_URI = os.environ.get("MONGODB_URI", "")
+MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb+srv://vaqtm:p1uP6mprrpV4WKHA@cluster0.gaydlw5.mongodb.net/?retryWrites=true&w=majority")
 SESSION_NAME = os.environ.get("SESSION_NAME", "LeoMediaSearchBot")
 # Messages
 default_start_massege = """
 **Hi {}👋
 
-I'm Leo Media Search Bot**
+I'm Media Search Bot**
 
 You can start searching by the "Search Media 🔎" button below 😊
 """
 
 default_share_button_text = """
-Leo Media Search Bot 🇱🇰
+Media Search Bot 🇱🇰
 
 Here you can find any media file by searching its name 😊
 
-Bot : {username} 🤖
-Support Group : @leosupportx 🇱🇰
-Updates Channel: @new_ehi 🇱🇰
-Developper : @naviya2 🇱🇰
+Bot : {username} 🤖 🇱🇰
+Updates Channel: @uzlaynuz 🇱🇰
+Developper : @Mdddyou 🇱🇰
 """
 
 START_MSG = environ.get('START_MSG', default_start_massege)
 
 SHARE_BUTTON_TEXT = environ.get('SHARE_BUTTON_TEXT', default_share_button_text)
 
-INVITE_MSG = environ.get('INVITE_MSG', 'Please join @.... to use this bot')
+INVITE_MSG = environ.get('INVITE_MSG', 'Please join @uzlaynuz to use this bot')
